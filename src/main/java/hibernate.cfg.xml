@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<property name="connection.Driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="coonection.url">jdbc:MySql://localhost:3306/otopractice</property>
+		<property name="connection.usernamel">root</property>
+		<property name="connection.password">Ndnikam@0909</property>
+		<property name="Dailect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">create</property>
+		<mapping class="com.Practice.Answer" />
+		<mapping class="com.Practice.Question" />
+		
+		
+	</session-factory>
+
+</hibernate-configuration>
